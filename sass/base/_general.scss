@@ -1,0 +1,67 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: 2px solid tomato;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;    
+  letter-spacing: 0.03em;
+  background-color: $primary-white-color;
+  color: $text-color; 
+} 
+
+nav {
+  display: flex;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+}
+
+// @include for-phone {
+//   nav {
+//     display: none;
+//   }
+// }
+
+
+h1,h2,h3,h4,h5 {
+  color: $primary-text-color;
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.web {
+  color: $accent-color;
+}
+
+.section {
+  margin-top: 94px;
+
+  @include for-phone {
+    margin-top: 60px;
+  }
+}
+
+@include for-phone {
+  .section-title {
+    padding: 0 0 30px;
+  }
+}
+
+address {
+  font-style: normal;
+  margin-top: 20px;
+}

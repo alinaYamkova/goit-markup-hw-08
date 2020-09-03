@@ -1,0 +1,91 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  
+  background-color: #F5F4FA;
+  border: none;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;   
+  color: $primary-text-color;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  
+  &:hover,
+  &:focus {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $accent-color;
+    background-color: $primary-white-color;
+    fill: $accent-color;
+  }
+}
+
+.button[type="submit"] {
+  display: flex;
+  font-family: Roboto;
+  font-weight: 700;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button.secondary {
+  padding: 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $primary-white-color;
+  background-color: $accent-color;
+    
+  &:hover,
+  &:focus {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: $accent-color;
+    background-color: $primary-white-color;
+    fill: $accent-color;
+  }
+
+  >.icon-send {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $primary-white-color;
+  cursor: pointer;
+
+  &:hover > span[class="close-modal"],
+  &:focus > span[class="close-modal"] {
+    color: $accent-color;
+  }
+}
+

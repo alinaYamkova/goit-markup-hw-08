@@ -1,1 +1,2 @@
-# goit-markup-hw-08
+# goit-markup-hw-02
+домашня робота 2 Портфолио

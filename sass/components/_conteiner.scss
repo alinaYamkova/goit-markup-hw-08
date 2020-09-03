@@ -1,0 +1,17 @@
+.conteiner {
+  width: 1600px;
+  padding-left: 215px;
+  padding-right: 215px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-phone {
+    width: $phone;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include for-tablet {
+    width: $tablet;
+  }
+}  

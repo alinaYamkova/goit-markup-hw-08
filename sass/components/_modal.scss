@@ -1,0 +1,32 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+
+  padding: 40px;
+  box-shadow: 
+  0px 1px 3px rgba(0, 0, 0, 0.12), 
+  0px 1px 1px rgba(0, 0, 0, 0.14), 
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: $primary-white-color;
+
+  &-title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.15;
+    margin: 0;
+    padding-bottom: 12px;
+  }
+}
+
+span.close-modal {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+}

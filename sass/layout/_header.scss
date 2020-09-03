@@ -1,0 +1,46 @@
+.page-header {
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid #ECECEC;
+
+  @media screen and (min-width: $phone) and (max-width: 787px) {
+    display: block;
+    height: 60px;
+    border-bottom: none;    
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;    
+    height: 80px;
+  }
+}
+
+.curent.link::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  border-bottom: 4px solid $accent-color;
+  border-radius: 2px;
+  bottom: 0;
+}
+
+.header-svg {
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    --color4: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  } 
+}
+
+.header-svg:hover {
+  --color4: $accent-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} 

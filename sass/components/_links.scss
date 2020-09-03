@@ -1,0 +1,79 @@
+.link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.hover-link .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
+
+.social-link-box {
+  display: flex;  
+  padding: 16px 32px 24px;    
+
+  @include for-phone {
+    padding: 16px 137px 24px;    
+  }
+}
+
+.social-link-list:not(:last-child) {
+  margin-right: 10px;
+} 
+
+
+.links-box-footer {
+  display: flex;
+}
+
+.social-links-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  & > .icon-svg {
+    fill: $grey-color;
+  }
+
+  &:hover {
+    background-color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & > .icon-svg {
+      fill: $primary-white-color;
+    }  
+  }
+}
+
+
+.icon-link.footer {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  & > .icon-svg.footer-svg {
+    fill: $primary-white-color;
+  }
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
