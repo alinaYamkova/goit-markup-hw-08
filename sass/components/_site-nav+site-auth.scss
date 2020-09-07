@@ -1,3 +1,7 @@
+ 
+
+/*-------------------------------FOR PHONE--------------------------*/
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -15,7 +19,7 @@
     line-height: 1.14;
     text-decoration: none;
     color: $primary-text-color;
-      
+        
     &:hover,
     &:focus {
       color: $accent-color;
@@ -24,6 +28,7 @@
     }
   } 
 }
+
 
 .site-auth {
   display: flex;
@@ -35,17 +40,25 @@
   }
 
   .contact-link {
-    display: flex;
+    display: block;
     align-items: center;
     max-height: 80px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
+    padding-top: 21px;
+    padding-bottom: 21px;
+     
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
     color: $text-color;
+
+    @include for-size(desktop) {
+      display: flex;
+      align-items: center;
+      max-height: 80px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     &:hover,
     &:focus {
@@ -56,21 +69,9 @@
   }   
 }
 
-@media (max-width: #{$tablet - 1}) {
-  .site-nav,
-  .site-auth {
+@media (max-width: #{$tablet - 1}) { 
+  .site-auth,
+  .site-nav {
     display: none;
   }
 } 
-
-@include for-tablet {
-  .contact-link {
-    display: block;
-    align-items: center;
-    max-height: 80px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-
-

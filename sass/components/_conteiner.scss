@@ -1,17 +1,43 @@
 .conteiner {
-  width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  @include for-phone {
-    width: $phone;
-    padding-left: 15px;
-    padding-right: 15px;
+  @include for-size(tablet-portreit) {
+    width: 480px;
+  }
+  
+  @include for-size(tablet-landscape) {
+    width: 786px;
   }
 
-  @include for-tablet {
-    width: $tablet;
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-left: 215px;
+    padding-right: 215px;  
   }
-}  
+} 
+
+@media (max-width: #{$tablet - 1}) { 
+  .conteiner.work {
+    display: none;
+  }
+} 
+
+.conteiner.footer {
+  padding-top: 60px;
+  // max-height: 100%;   
+  text-align: center;
+  // padding-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.71;
+  background: #2F303A;
+  color: $primary-white-color; 
+  
+  @include for-size(tablet-landscape) {
+    display: flex;
+    padding-top: 72px;
+    justify-content: space-between;
+  }
+}

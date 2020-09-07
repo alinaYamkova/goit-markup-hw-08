@@ -1,34 +1,37 @@
 .clients-list {
-  width: calc((100% - 30px * 5) / 6);
-  margin-right: 30px;
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 
-  @include for-phone {
-    .clients-list:not(:last-child) {
-     margin-right: 30px;
-    }
-    width: calc ((100% - 30px) / 2 );
-
+  @include for-size(tablet-landscape) {
+    width: calc((100% - 6 * 15px) / 3);
   }
-
+  
+  @include for-size(desktop) {
+    width: calc((100% - 150px) / 6);
+  }
+  
   &-box  {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
-}
-
+} 
 
 .client-svg {
   fill: $grey-color;
 }
 
-
 .icon-client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid $grey-color;
   border-radius: 4px;
+
+    @include for-size(desktop) {
+      width: 170px;
+    }
 
   &:hover,
   &:focus {

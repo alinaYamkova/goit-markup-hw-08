@@ -19,23 +19,28 @@
   color: $primary-text-color;
 }
 
-
 .social-link-box {
   display: flex;  
-  padding: 16px 32px 24px;    
-
-  @include for-phone {
-    padding: 16px 137px 24px;    
-  }
+  padding-top: 16px;    
+  padding-bottom: 24px;
+  justify-content: center;
 }
+
+  // @include for-size (tablet-landscape) {
+  //   padding: 16px 74px 24px;    
+  // }
+  // @include for-size (desktop) {
+  //   padding: 16px 32px 24px;    
+  // }
+
 
 .social-link-list:not(:last-child) {
   margin-right: 10px;
 } 
 
-
 .links-box-footer {
   display: flex;
+  justify-content: center;
 }
 
 .social-links-footer:not(:last-child) {
@@ -64,7 +69,6 @@
     }  
   }
 }
-
 
 .icon-link.footer {
   background-color: rgba(255, 255, 255, 0.1);

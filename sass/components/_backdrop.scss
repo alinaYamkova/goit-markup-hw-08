@@ -4,12 +4,16 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
 
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.2);
-  transform: scale(1);
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
+  @include for-size(tablet-landscape) {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    // overflow-y: visible;
+  }
 
   &.is-hidden {
     pointer-events: none;

@@ -1,55 +1,63 @@
 .hero-conteiner {
   display: block;
-  padding: 0;
-  
-  max-width: 1600px;
-  max-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-left: 0;
+  padding-right: 0;
+  max-height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   
   text-align: center;
-  background-image: linear-gradient( 
-    rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4) ), url(
-    ../images/Header.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/Hero-bg-mobil-480-@1x.jpg);
   background-color: #C4C4C4;    
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  // @media screen and (min-wight: 480px) {
-  @include for-phone {
-    padding-left: 0;
-    padding-right: 0;
-    max-height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+ 
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    background-image: url(../images/Hero-bg-mobil-480-@2x.jpg);
   }
- }
+
+  @include for-size(tablet-landscape) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/Hero-bg-tablet-768-@1x.jpg);
+   
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: url(../images/Hero-bg-tablet-960-@2x.png);
+    }
+  }
+
+  @include for-size(desktop) {
+    max-width: 1200px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/Hero-bg-desktop-1600-@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: url(../images/Hero-bg-desktop-1600-@2x.png);
+    }
+  }
+}
 
 .hero-title {
+  height: 84px;
   margin-bottom: 30px;
-  margin-left: 0;
-  margin-right: 0;
   margin-top: 0;
   text-transform: uppercase;
   text-align: center;
 
   color: $primary-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;  
   letter-spacing: 0.06em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  @include for-phone {
-  //  width: 360px;
-   height: 84px;
-   font-size: 26px;
-   margin-left: 60px;
-   margin-right: 60px;
-   line-height: 1.615;  
+  
+  @include for-size(tablet-landscape) {
+    font-size: 44px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.36;
   }
 }

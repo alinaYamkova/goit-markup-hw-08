@@ -1,26 +1,18 @@
-.section.work {
-  display: block;
-
-  @include for-phone {
-    display: none;    
-  }
-}
-
 .section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: $primary-text-color;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 
-  @include for-phone {
-    padding-bottom: 30px;
+  @include for-size(desctop) {
+    padding-bottom: 50px;
   }  
 }
 
 .work-box {
-  // width: calc((100% - 30px * 2) / 3);
+  width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   position: relative;
 

@@ -10,28 +10,30 @@
 
 
 .navigation .logo {
-  width: 153px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-right: 85px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 0;
+  line-height: 1.167;
 
-  @include for-phone {
-    width: 134px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-right: 0;
-    line-height: 1.167;
-  }
-
-  @include for-tablet {
+  @include for-size(tablet-landscape) {
     padding-top: 26px;
     padding-bottom: 26px;
   }
+  @include for-size(desktop) {
+    width: 153px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 85px;
+    line-height: 1.192;
+  }
 }
-
 
 .logo.logo-footer {    
   color: $primary-white-color;
-  margin-top: -12px;
+  justify-content: center;
+
+  @include for-size(tablet-landscape) {
+    margin-top: -12px;
+  }
 } 
 

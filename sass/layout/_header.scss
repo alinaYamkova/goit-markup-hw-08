@@ -1,18 +1,15 @@
 .page-header {
-  display: flex;
-  height: 80px;
-  border-bottom: 1px solid #ECECEC;
-
-  @media screen and (min-width: $phone) and (max-width: 787px) {
-    display: block;
-    height: 60px;
-    border-bottom: none;    
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: block;    
+  height: 60px;
+  
+  @include for-size(tablet-landscape) {
+    display: flex;    
     height: 80px;
+    border-bottom: 1px solid #ECECEC;   
   }
+
+  // @include for-size(desktop) {
+  //   height: 80px;
+  // }
 }
 
 .curent.link::after {
