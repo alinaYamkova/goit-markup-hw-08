@@ -7,15 +7,13 @@
   @include for-size(tablet-portreit) {
     width: 480px;
   }
-  
   @include for-size(tablet-landscape) {
-    width: 786px;
+    width: 768px;
   }
-
   @include for-size(desktop) {
-    width: 1200px;
-    padding-left: 215px;
-    padding-right: 215px;  
+    width: 1170px;
+    padding-left: 0;
+    padding-right: 0;  
   }
 } 
 

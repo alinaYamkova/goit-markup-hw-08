@@ -49,14 +49,14 @@ h1,h2,h3,h4,h5 {
   }
 
   &-title {
-    padding: 0 0 30px;
+    // padding: 0 0 30px;
 
     @include for-size(tablet-portreit) {
       padding: 60 0 30px;
     }
-    @include for-size(desktop) {
-      padding: 94px;
-    }
+    // @include for-size(desktop) {
+    //   padding: 94px;
+    // }
   }
 }
 

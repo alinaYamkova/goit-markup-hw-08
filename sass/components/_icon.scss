@@ -2,14 +2,27 @@
 .icon-svg {
   width: 20px;
   height: 20px;
+}
 
+.btn-mobile-menu.is-open .icon-menu {
+  display: none;
+}
+
+.btn-mobile-menu.is-open .icon-cross {
+  display: block;
 }
 
 .icon-features {
-  width: 270px;
+  display: flex;
+  justify-content: center;
   height: 120px;
   padding: 25px 102px;
   background: #F5F4FA;
   border-radius: 4px;
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
+
 

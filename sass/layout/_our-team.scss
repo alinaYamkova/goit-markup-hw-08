@@ -2,7 +2,6 @@
   background-color: #F5F4FA;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: -15px;
 
   @include for-size(desktop) {
     padding-top: 94px;
@@ -10,23 +9,29 @@
   }
 }
 
-// @include for-size (tablet-portreit) {
-//   .section-title.team {
-//     padding: 0 0 30px;
-//   }
-// }
+@include for-size (desktop) {
+  .section-title {
+    padding-bottom: 50px;
+  }
+}
 
 .list.team {
   display: block;
+  margin: -15px;
 
   @include for-size(tablet-landscape) {
     display: flex;
     flex-wrap: wrap;
   }
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
 }
 
 .team-title {
-  margin: 30px 0 0;   
   text-align: center;
   font-weight: 500;
   font-size: 16px;
