@@ -1,5 +1,5 @@
 .portfolio-menu {
- padding-bottom: 25px;
+ padding-bottom: 10px;
 }
 
 .menu-list {
@@ -7,9 +7,9 @@
   flex-wrap: wrap;
   align-items: center;
   
-  > li:not(:first-child) {
-    margin-left: 8px;
-  }
+  // > li:not(:first-child) {
+  //   margin-left: 8px;
+  // }
   
   @include for-size(tablet-landscape) {
     flex-wrap: nowrap;
