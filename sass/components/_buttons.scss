@@ -31,6 +31,39 @@
   }
 }
 
+.btn-mobile-menu {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .close-icon {
+    display: none;
+  }
+  &.is-open .menu-icon {
+    display: none;
+  }
+  &.is-open .close-icon {
+    display: block;
+  }
+  
+  &:hover .menu-svg {
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+}
+
 .button[type="submit"] {
   display: flex;
   font-family: Roboto;
@@ -91,27 +124,21 @@
   }
 }
 
-.btn-mobile-menu {
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.button.menu-btn {
+  width: auto;
+  height: 38px;  
+  padding: 6px 22px;
+  margin-top: 15px;
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em
 
-   
-  &:hover .menu-svg {
-    fill: $accent-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-  }
 
-  @include for-size(desktop) {
-    display: none;
-  }
+
 }
-

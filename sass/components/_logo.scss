@@ -9,11 +9,12 @@
 }
 
 
-.navigation .logo {
+.navigation-header .logo {
   padding-top: 16px;
   padding-bottom: 16px;
   margin-right: 0;
   line-height: 1.167;
+  margin-right: 88px;
 
   @include for-size(tablet-landscape) {
     padding-top: 26px;

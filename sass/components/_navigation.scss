@@ -1,8 +1,12 @@
-.navigation {
-  position: relative;
+.page-header > .navigation-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-height: 60px;
+
+    @include for-size (tablet-landskape) {
+      height: 80px;
+    }
   // margin-right: auto; 
 }
 

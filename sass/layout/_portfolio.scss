@@ -1,9 +1,24 @@
-.list-menu {
+.portfolio-menu {
+ padding-bottom: 25px;
+}
+
+.menu-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  align-items: center;
   
-    > li:not(:first-child) {
-   margin-left: 8px;
+  > li:not(:first-child) {
+    margin-left: 8px;
   }
+  
+  @include for-size(tablet-landscape) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
+
 }
