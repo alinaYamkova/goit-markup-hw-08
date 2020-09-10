@@ -23,6 +23,16 @@
   }
 }
 
+.curent.link::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  border-bottom: 4px solid $accent-color;
+  border-radius: 2px;
+  left: 0;
+}
+
 span.close-modal {
   display: inline-flex;
   justify-content: center;

@@ -1,0 +1,40 @@
+
+.section {
+  margin-top: 60px;
+
+  @include for-size(desktop) {
+    margin-top: 94px;
+  }
+
+  &-title {
+    padding: 60px 0 30px;
+
+    // @include for-size(tablet-portreit) {
+    //   
+    // }
+    @include for-size(desktop) {
+      padding: 94px 50px;
+    }
+  }
+
+  &.team {
+    background-color: #F5F4FA;
+  }
+
+  &.footer {
+    padding-top: 60px;
+    text-align: center;
+    // padding-bottom: 60px;
+    font-size: 14px;
+    line-height: 1.71;
+    background: #2F303A;
+    color: $primary-white-color; 
+    
+    @include for-size(tablet-landscape) {
+      // display: flex;
+      padding-top: 72px;
+      justify-content: space-between;
+    }
+  }
+}
+

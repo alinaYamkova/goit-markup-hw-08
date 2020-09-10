@@ -17,18 +17,17 @@ body {
   color: $text-color; 
 } 
 
+h1,h2,h3,h4,h5 {
+  color: $primary-text-color;
+  font-weight: 700;
+}
+
 .navigation {
   display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $primary-text-color;
-}
-
-
-h1,h2,h3,h4,h5 {
-  color: $primary-text-color;
-  font-weight: 700;
 }
 
 .list {
@@ -41,25 +40,6 @@ h1,h2,h3,h4,h5 {
   color: $accent-color;
 }
 
-.section {
-  margin-top: 60px;
-
-  @include for-size(desktop) {
-    margin-top: 94px;
-  }
-
-  &-title {
-    // padding: 0 0 30px;
-
-    @include for-size(tablet-portreit) {
-      padding: 60 0 30px;
-    }
-    // @include for-size(desktop) {
-    //   padding: 94px;
-    // }
-  }
-}
-
 address {
   font-style: normal;
   margin-top: 20px;
@@ -68,6 +48,6 @@ address {
 /*----------------------------FOR PHONE------------------------*/
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }

@@ -1,26 +1,25 @@
-.hero-conteiner {
+.hero {
   display: block;
-  padding-left: 0;
-  padding-right: 0;
+ 
   max-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/Hero-bg-mobil-480-@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mobil-480-@1x.jpg);
   background-color: #C4C4C4;    
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-    background-image: url(../images/Hero-bg-mobil-480-@2x.jpg);
+    background-image: url(../images/Header-mobil-480-@2x.jpg);
   }
 
   @include for-size(tablet-landscape) {
     display: flex;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/Hero-bg-tablet-768-@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tablet-768-@1x.jpg);
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: url(../images/Hero-bg-tablet-960-@2x.png);
+      background-image: url(../images/Header-tablet-768-@2x.jpg);
     }
   }
 
@@ -32,9 +31,9 @@
     margin-right: 0;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/Hero-bg-desktop-1600-@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/Header-desktop-1600-@1x.jpg);
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: url(../images/Hero-bg-desktop-1600-@2x.png);
+      background-image: url(../images/Header-desktop-1600-@2x.jpg);
     }
   }
 }
