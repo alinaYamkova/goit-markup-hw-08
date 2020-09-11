@@ -25,7 +25,8 @@
 @media (min-width: $tablet) { 
   .menu-window {
     display: flex;
-    
+    justify-content: space-between;
+    height: 80px; 
   }
 }
 

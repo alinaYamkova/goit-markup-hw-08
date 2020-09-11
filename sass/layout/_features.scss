@@ -29,21 +29,16 @@
 
 .features-box {
   display: block;
-
-  // &:nth-child(4n) {
-  //   margin-right: 0;
-  // }
-
   & > p {
     margin: 0;
   }
 
   @include for-size(tablet-landscape) {
-    width: calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 15px * 4) / 2);
     margin: 15px;
   }
   @include for-size(desktop) {
-    width: calc((100% - 15px * 4) / 4);
+    width: calc((100% - 15px * 8) / 4);
   }
 }
 
