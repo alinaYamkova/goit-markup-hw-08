@@ -22,6 +22,13 @@
   }
 }
 
+@media (min-width: $tablet) { 
+  .menu-window {
+    display: flex;
+    
+  }
+}
+
 // .btn-mobile-menu.is-open {
 //   opacity: 1;
 //   visibility: visible;

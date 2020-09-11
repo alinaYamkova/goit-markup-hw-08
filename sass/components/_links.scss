@@ -3,27 +3,9 @@
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
   color: $text-color;
-}
-
-.hover-link .contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration: none;
-  color: $primary-text-color;
-
-  @include for-size (tablet-landscape) {
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-  }
-  @include for-size (desktop) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
 
 .social-link-box {

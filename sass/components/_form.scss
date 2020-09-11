@@ -153,9 +153,9 @@ textarea {
   flex-wrap: wrap;
   width: auto;
 
-   @include for-size (tablet-landscape) {
-      flex-wrap: nowrap;
-    }
+  //  @include for-size (tablet-landscape) {
+  //     flex-wrap: nowrap;
+  //   }
 
   & >input {
     width: 100%;

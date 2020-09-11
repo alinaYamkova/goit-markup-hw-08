@@ -1,3 +1,9 @@
+@media screen and(min-width: 768px) {
+  .projects-portfolio {
+    margin: -15px;
+  }
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -9,23 +15,16 @@
 }
 
 .projects-item {
-  
   width: 100%;
   margin-bottom: 30px;
   
   @include for-size(tablet-landscape) {
-    max-width: calc((100% - 30px * 2) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    // border: 1px solid $primary-white-color;    
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
+    max-width: calc((100% - 15px * 4) / 2);
+    margin: 15px;   
   }
-  
+  @include for-size(desktop) {
+    max-width: calc((100% - 15px * 6) / 3);
+  }
 }
 
 .projects-item:hover {
@@ -40,7 +39,6 @@
     transform: translatey(0);
   }
 }
-
 
 .efect {
   position: relative;

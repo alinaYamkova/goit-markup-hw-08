@@ -45,6 +45,20 @@ address {
   margin-top: 20px;
 }
 
+.curent.link::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  border-bottom: 4px solid $accent-color;
+  border-radius: 2px;
+  left: 0;
+
+  @include for-size (tablet-landscape) {
+    bottom: 0;
+  }
+}
+
 /*----------------------------FOR PHONE------------------------*/
 img {
   display: block;
