@@ -104,12 +104,18 @@
 }
 
 .form-accept-text {
-  padding-left: 36px; 
+  padding-left: 20px; 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
+
+  @include for-size(tablet-landscape) {
+    padding-left: 6px;
+    font-size: 14px;
+    line-height: 1.71;
+  } 
 }
 
 .form-agreement-link {

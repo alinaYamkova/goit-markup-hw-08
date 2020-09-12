@@ -123,8 +123,8 @@
     background-color: $primary-white-color;
   }
 
-  &:hover > span[class="close-modal"],
-  &:focus > span[class="close-modal"] {
+  &:hover span[class="close-modal"],
+  &:focus span[class="close-modal"] {
     color: $accent-color;
   }
 }
