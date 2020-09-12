@@ -66,7 +66,7 @@
     margin-left: 60px;
   }
   @media screen and (min-width: 1170px) {
-    margin-left: 300px;
+    margin-left: 303px;
   }
 }
 
@@ -75,7 +75,6 @@
     font-size: 12px;
     text-align: left;
   }
-
   @include for-size(desktop) {
     display: flex;
     
@@ -87,6 +86,8 @@
 
 .site-auth .contact-link {
   display: block; 
+  align-items: center;
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -97,8 +98,8 @@
     font-size: 12px;
     line-height: 1.167;
   }
-
   @include for-size(desktop) {
+    font-size: 14px;
     display: flex;
   }
 

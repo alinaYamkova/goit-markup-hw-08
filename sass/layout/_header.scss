@@ -1,6 +1,5 @@
 .page-header {
   position: relative;
-  // height: 60px;  -  delet
   
   @include for-size(tablet-landscape) {
     display: flex;    
@@ -8,12 +7,6 @@
     border-bottom: 1px solid #ECECEC;   
   }
 }
-
-// @include for-size (tablet-landskape) {
-//   height: 80px;
-// }
-// margin-right: auto; 
-
 
 .header-svg {
   justify-content: center;
